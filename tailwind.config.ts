@@ -8,13 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      gridTemplateColumns: {
+        auto400: "repeat(auto-fit, minmax(400px, 1fr))",
+      },
+      screens: {
+        lg: "600px",
+        gridlg: "1000px",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
