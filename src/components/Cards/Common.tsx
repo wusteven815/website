@@ -1,10 +1,10 @@
-import IconCard from "@/components/IconChip/IconChip";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import IconCard from "@/components/Chip/Chip";
+import ProjectCard from "@/components/Cards/ProjectCard";
 import { FaCheck, FaCrown } from "react-icons/fa6";
 import {
   CppCard,
   DjangoCard,
-  Flaskcard,
+  FlaskCard,
   JavaScriptCard,
   KerasCard,
   MongoDBCard,
@@ -17,19 +17,21 @@ import {
   ScikitLearnCard,
   TensorflowCard,
   TypeScriptCard,
-} from "@/components/IconChip/Common";
+} from "@/components/Chip/Common";
 
 interface CommonCardProps {
+  className?: string;
   noAnim?: boolean;
 }
 
-export function MotiSpectraCard({ noAnim }: CommonCardProps) {
+export function MotiSpectraCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="MotiSpectra"
       github="https://github.com/wusteven815/MotiSpectra"
       devpost="https://devpost.com/software/motispectra"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>Developed tool to assess listener engagement in online meetings</li>
@@ -47,7 +49,7 @@ export function MotiSpectraCard({ noAnim }: CommonCardProps) {
         <OpenCvCard />
         <TensorflowCard />
         <KerasCard />
-        <Flaskcard />
+        <FlaskCard />
         <TypeScriptCard />
         <NextJsCard />
         <ReactCard />
@@ -56,13 +58,14 @@ export function MotiSpectraCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function NarratorRLCard({ noAnim }: CommonCardProps) {
+export function NarratorRLCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="narratorRL"
       github="https://github.com/wusteven815/narratorRL"
       devpost="https://devpost.com/software/narratorrl"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>
@@ -91,13 +94,14 @@ export function NarratorRLCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function ReviewRecapCard({ noAnim }: CommonCardProps) {
+export function ReviewRecapCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="Review Recap"
       github="https://github.com/wusteven815/ReviewRecap"
       devpost="https://devpost.com/software/bob-gj5h29"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>Made a Chrome extension that parses Amazon reviews to generate a summary</li>
@@ -119,9 +123,9 @@ export function ReviewRecapCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function WLP4CompilerCard({ noAnim }: CommonCardProps) {
+export function WLP4CompilerCard({ className, noAnim }: CommonCardProps) {
   return (
-    <ProjectCard name="WLP4 Compiler" noAnim={noAnim}>
+    <ProjectCard name="WLP4 Compiler" noAnim={noAnim} className={className}>
       <ul className="flex-1">
         <li>Built compiler from WLP4 (custom subset of C++) to MIPS (RISC machine code)</li>
         <li>
@@ -135,12 +139,13 @@ export function WLP4CompilerCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function FIRSTRoboticsCard({ noAnim }: CommonCardProps) {
+export function FIRSTRoboticsCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="FIRST Robotics"
       github="https://github.com/roboticsmgci/2022-robot"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>
@@ -158,13 +163,14 @@ export function FIRSTRoboticsCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function Block2DiscordCard({ noAnim }: CommonCardProps) {
+export function Block2DiscordCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="block2discord"
       github="https://github.com/wusteven815/block2discord"
       devpost="https://devpost.com/software/block2discord"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>
@@ -183,13 +189,14 @@ export function Block2DiscordCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function GPTGeorgeCard({ noAnim }: CommonCardProps) {
+export function GPTGeorgeCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="GPT George"
       github="https://github.com/wusteven815/gpt-george"
       devpost="https://devpost.com/software/gpt-george"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>Engineered a voice assistant with GPT-4 API</li>
@@ -204,13 +211,14 @@ export function GPTGeorgeCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function QuizCasterCard({ noAnim }: CommonCardProps) {
+export function QuizCasterCard({ className, noAnim }: CommonCardProps) {
   return (
     <ProjectCard
       name="QuizCaster"
       github="https://github.com/wusteven815/QuizCaster"
       devpost="https://devpost.com/software/quizcaster"
       noAnim={noAnim}
+      className={className}
     >
       <ul className="flex-1">
         <li>
@@ -235,9 +243,9 @@ export function QuizCasterCard({ noAnim }: CommonCardProps) {
   );
 }
 
-export function ChessCard({ noAnim }: CommonCardProps) {
+export function ChessCard({ className, noAnim }: CommonCardProps) {
   return (
-    <ProjectCard name="Chess in C++" noAnim={noAnim}>
+    <ProjectCard name="Chess in C++" noAnim={noAnim} className={className}>
       <ul className="flex-1">
         <li>Created chess using OOP and memory safe principles</li>
       </ul>

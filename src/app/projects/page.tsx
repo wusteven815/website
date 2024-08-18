@@ -10,7 +10,7 @@ import {
   QuizCasterCard,
   ReviewRecapCard,
   WLP4CompilerCard,
-} from "@/components/ProjectCard/Common";
+} from "@/components/Cards/Common";
 import Link from "next/link";
 import { useState } from "react";
 import { FaChevronLeft } from "react-icons/fa6";
@@ -19,7 +19,7 @@ export default function Page() {
   const [filter, setFilter] = useState("ALL");
 
   return (
-    <div className="p-6 lg:p-16">
+    <div className="px-6 py-8 lg:p-16">
       <div className="flex items-center justify-center lg:justify-start mb-4 gap-x-3 relative lg:static">
         <Link
           href="/"
@@ -51,8 +51,8 @@ export default function Page() {
         {["ALL", "PYTHON", "JS/TS", "HACKATHON"].includes(filter) && <MotiSpectraCard noAnim />}
         {["ALL", "PYTHON", "JS/TS", "HACKATHON"].includes(filter) && <NarratorRLCard noAnim />}
         {["ALL", "PYTHON", "JS/TS", "HACKATHON"].includes(filter) && <ReviewRecapCard noAnim />}
-        {["ALL", "C++"].includes(filter) && <WLP4CompilerCard noAnim />}
         {["ALL", "C++"].includes(filter) && <FIRSTRoboticsCard noAnim />}
+        {["ALL", "C++"].includes(filter) && <WLP4CompilerCard noAnim />}
         {["ALL", "PYTHON", "HACKATHON"].includes(filter) && <Block2DiscordCard noAnim />}
         {["ALL", "PYTHON", "HACKATHON"].includes(filter) && <GPTGeorgeCard noAnim />}
         {["ALL", "PYTHON", "JS/TS", "HACKATHON"].includes(filter) && <QuizCasterCard noAnim />}

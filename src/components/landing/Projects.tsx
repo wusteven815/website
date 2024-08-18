@@ -5,7 +5,7 @@ import {
   MotiSpectraCard,
   NarratorRLCard,
   ReviewRecapCard,
-} from "@/components/ProjectCard/Common";
+} from "@/components/Cards/Common";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";

@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex h-0.5 bg-neutral-700" />
 
       <div className="flex justify-center pt-12 pb-16 lg:py-32 min-h-screen">
-        <div className="flex flex-col justify-center w-5/6 max-w-[1100px] gap-y-16">
+        <div className="flex flex-col justify-center w-5/6 max-w-[1100px] gap-y-20">
           <Experience />
           <Projects />
         </div>

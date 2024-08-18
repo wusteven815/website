@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         auto400: "repeat(auto-fit, minmax(400px, 1fr))",
+        experience: "24px 1fr",
+        experienceLg: "24px max-content 1fr",
       },
       screens: {
         lg: "600px",
