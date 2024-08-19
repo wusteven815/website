@@ -1,6 +1,7 @@
 import { SiDevpost, SiGithub, SiLinkedin } from "react-icons/si";
 import TypingWords from "@/components/TypingWords";
 import Link from "next/link";
+import { MdEmail } from "react-icons/md";
 
 export default function Hero() {
   return (
@@ -27,8 +28,13 @@ export default function Hero() {
             icon: SiLinkedin,
             link: "https://www.linkedin.com/in/wusteven815",
           },
+          {
+            name: "mail",
+            icon: MdEmail,
+            link: "mailto:wusteven815.com@gmail.com",
+          },
         ].map((iconButton) => (
-          <Link
+          <a
             type="button"
             aria-label={iconButton.name}
             href={iconButton.link}
@@ -36,7 +42,7 @@ export default function Hero() {
             key={iconButton.name}
           >
             <iconButton.icon className="w-8 h-8 lg:w-10 lg:h-10" />
-          </Link>
+          </a>
         ))}
       </div>
     </div>
