@@ -44,6 +44,9 @@ export default function Hero() {
             <iconButton.icon className="w-8 h-8 lg:w-10 lg:h-10" />
           </a>
         ))}
+        <Link className="border-2 px-2 lg:px-3 py-0.5 lg:py-1.5 rounded-lg" href="/resume.pdf">
+          Resume
+        </Link>
       </div>
     </div>
   );
