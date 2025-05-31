@@ -12,14 +12,20 @@ import {
   WLP4CompilerCard,
 } from "@/components/Cards/Common";
 import Link from "next/link";
-import { useSearchParams, useRouter } from "next/navigation";
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { FaChevronLeft } from "react-icons/fa6";
 
 export default function Page() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
+  return (
+    <Suspense fallback={<div className="text-neutral-400">Loading...</div>}>
+      <ProjectsPageContent />
+    </Suspense>
+  );
+}
 
-  // Map query params to filter keys
+function ProjectsPageContent() {
+  const searchParams = useSearchParams();
   const filterMap = [
     { key: "ALL", param: null },
     { key: "PYTHON", param: "python" },
@@ -29,7 +35,7 @@ export default function Page() {
   ];
 
   const getQueryForFilter = (param: string | null) => {
-    if (!param) return "/projects"; // Go to /projects for ALL
+    if (!param) return "/projects";
     const params = new URLSearchParams();
     params.set("filter", param);
     return `?${params.toString()}`;
