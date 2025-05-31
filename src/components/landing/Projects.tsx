@@ -4,7 +4,7 @@ import {
   FIRSTRoboticsCard,
   MotiSpectraCard,
   NarratorRLCard,
-  ReviewRecapCard,
+  WLP4CompilerCard,
 } from "@/components/Cards/Common";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function Projects() {
       <div className="w-full grid grid-cols-1 gridlg:grid-cols-2 gap-4">
         <MotiSpectraCard />
         <NarratorRLCard />
-        <ReviewRecapCard />
+        <WLP4CompilerCard />
         <FIRSTRoboticsCard />
       </div>
       <Link

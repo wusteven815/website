@@ -5,6 +5,7 @@ import {
   NextJsCard,
   PlaywrightCard,
   PostgreSQLCard,
+  PythonCard,
   ReactCard,
   ReactNativeCard,
   RedisCard,
@@ -19,11 +20,27 @@ export default function Experience() {
       <h1 className="text-3xl lg:text-4xl font-bold text-neutral-100 mb-6">EXPERIENCE</h1>
       <div className="grid grid-cols-experience gridlg:grid-cols-experienceLg w-full gap-x-6 lg:gap-x-8">
         <ExperienceCard
+          company="Super.com"
+          logoUrl="/logos/super.png"
+          location="Toronto, Canada"
+          times={["May 2025 - Ongoing"]}
+          role="Software Engineering Co-op"
+        >
+          <ul>
+            <li>Currently developing financial technology solutions</li>
+          </ul>
+          <div className="flex flex-wrap gap-1 mt-4">
+            <PythonCard />
+            <TypeScriptCard />
+          </div>
+        </ExperienceCard>
+
+        <ExperienceCard
           company="Deephaven Data Labs"
           logoUrl="/logos/deephaven.png"
           location="New York, USA"
           times={["Jan 2024 - Apr 2024", "Sep 2024 - Dec 2024"]}
-          role="Software Engineering"
+          role="Software Engineering Co-op"
         >
           <ul>
             <li>
@@ -38,8 +55,19 @@ export default function Experience() {
               Optimized <b>GitHub Actions CI </b>end-to-end tests to shorten runtime by over
               <b> 75%</b> by modifying tests to be capable of running concurrently
             </li>
+            <li>
+              Developed{" "}
+              <a href="https://pypi.org/project/pyjsonpatch/" className="text-sky-400 underline">
+                PyPI Python package
+              </a>{" "}
+              for <b>rapidly calculating JSON tree diffs</b>, following{" "}
+              <a href="https://tools.ietf.org/html/rfc6902" className="text-sky-400 underline">
+                RFC 6902
+              </a>
+            </li>
           </ul>
           <div className="flex flex-wrap gap-1 mt-4">
+            <PythonCard />
             <TypeScriptCard />
             <ReactCard />
             <ReduxCard />
@@ -54,7 +82,7 @@ export default function Experience() {
           logoUrl="/logos/doctalk.png"
           location="Toronto, Canada"
           times={["May 2023 - Aug 2023"]}
-          role="Full-Stack Web Developer"
+          role="Full-Stack Web Developer Co-op"
           noMarginBottom
         >
           <ul>
