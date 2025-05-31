@@ -12,11 +12,31 @@ import {
   WLP4CompilerCard,
 } from "@/components/Cards/Common";
 import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import { FaChevronLeft } from "react-icons/fa6";
 
 export default function Page() {
-  const [filter, setFilter] = useState("ALL");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  // Map query params to filter keys
+  const filterMap = [
+    { key: "ALL", param: null },
+    { key: "PYTHON", param: "python" },
+    { key: "JS/TS", param: "js" },
+    { key: "C++", param: "cpp" },
+    { key: "HACKATHON", param: "hackathon" },
+  ];
+
+  const getQueryForFilter = (param: string | null) => {
+    if (!param) return "/projects"; // Go to /projects for ALL
+    const params = new URLSearchParams();
+    params.set("filter", param);
+    return `?${params.toString()}`;
+  };
+
+  const filterParam = searchParams.get("filter");
+  const filter = filterMap.find((f) => f.param === filterParam)?.key || "ALL";
 
   return (
     <div className="px-6 py-8 lg:p-16">
@@ -35,15 +55,16 @@ export default function Page() {
       </div>
 
       <div className="flex flex-wrap mb-6 lg:mb-8 gap-x-4 lg:gap-x-6 gap-y-2 justify-center lg:justify-start">
-        {["ALL", "PYTHON", "JS/TS", "C++", "HACKATHON"].map((item) => (
-          <button
-            className={`transition-colors duration-200 font-medium
-              ${filter === item && "text-sky-400"}`}
-            onClick={() => setFilter(item)}
-            key={item}
+        {filterMap.map((item) => (
+          <Link
+            href={getQueryForFilter(item.param)}
+            key={item.key}
+            scroll={false}
+            className={`transition-colors duration-200 font-medium${filter === item.key ? " text-sky-400" : ""}`}
+            aria-current={filter === item.key ? "page" : undefined}
           >
-            {item}
-          </button>
+            {item.key}
+          </Link>
         ))}
       </div>
 
