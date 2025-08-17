@@ -30,7 +30,7 @@ export const CppCard = () => (
 
 export const DatadogCard = () => (
   <Chip name="Datadog" icon={<SiDatadog className="w-3 h-3" />} className="bg-[#632CA6] text-white" />
-)
+);
 
 export const DjangoCard = () => (
   <Chip name="Django" icon={<SiDjango className="w-3 h-3" />} className="bg-[#092E20] text-white" />
