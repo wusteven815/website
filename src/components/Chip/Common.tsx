@@ -1,5 +1,6 @@
 import {
   SiCplusplus,
+  SiDatadog,
   SiDjango,
   SiFlask,
   SiGithubactions,
@@ -16,6 +17,7 @@ import {
   SiRedis,
   SiRedux,
   SiScikitlearn,
+  SiSnowflake,
   SiTensorflow,
   SiTypescript,
 } from "react-icons/si";
@@ -25,6 +27,10 @@ import { FaJava } from "react-icons/fa6";
 export const CppCard = () => (
   <Chip name="C++" icon={<SiCplusplus className="w-3 h-3" />} className="bg-[#00599C] text-white" />
 );
+
+export const DatadogCard = () => (
+  <Chip name="Datadog" icon={<SiDatadog className="w-3 h-3" />} className="bg-[#632CA6] text-white" />
+)
 
 export const DjangoCard = () => (
   <Chip name="Django" icon={<SiDjango className="w-3 h-3" />} className="bg-[#092E20] text-white" />
@@ -123,6 +129,14 @@ export const ScikitLearnCard = () => (
     name="scikit-learn"
     icon={<SiScikitlearn className="w-3 h-3" />}
     className="text-[#F7931E] bg-black"
+  />
+);
+
+export const SnowflakeCard = () => (
+  <Chip
+    name="Snowflake"
+    icon={<SiSnowflake className="w-3 h-3" />}
+    className="bg-[#29B5E8] text-white"
   />
 );
 

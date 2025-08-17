@@ -1,5 +1,7 @@
 import ExperienceCard from "@/components/Cards/ExperienceCard";
 import {
+  DatadogCard,
+  FlaskCard,
   GitHubActionsCard,
   JavaCard,
   NextJsCard,
@@ -10,6 +12,7 @@ import {
   ReactNativeCard,
   RedisCard,
   ReduxCard,
+  SnowflakeCard,
   TurborepoCard,
   TypeScriptCard,
 } from "../Chip/Common";
@@ -47,6 +50,11 @@ export default function Experience() {
           <div className="flex flex-wrap gap-1 mt-4">
             <PythonCard />
             <TypeScriptCard />
+            <ReactCard />
+            <FlaskCard />
+            <PostgreSQLCard />
+            <DatadogCard />
+            <SnowflakeCard />
           </div>
         </ExperienceCard>
 
