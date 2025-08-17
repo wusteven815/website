@@ -23,11 +23,26 @@ export default function Experience() {
           company="Super.com"
           logoUrl="/logos/super.png"
           location="Toronto, Canada"
-          times={["May 2025 - Ongoing"]}
+          times={["May 2025 - Aug 2025"]}
           role="Software Engineering Co-op"
         >
           <ul>
-            <li>Currently developing financial technology solutions</li>
+            <li>
+              Integrated <b>risk assessment</b> check to cash advance product, <b>reducing</b>{" "}
+              failed repayments caused by <b>fraudulent</b> users by <b>94%</b>
+            </li>
+            <li>
+              Engineered bank account balance analysis, <b>improving</b> new user repayments by{" "}
+              <b>19%</b>
+            </li>
+            <li>
+              Constructed new user off-boarding process, <b>increasing</b> removal of high-risk
+              users by <b>200%</b>
+            </li>
+            <li>
+              Ensured full <b>compliance</b> with financial <b>regulations</b> while developing cash
+              advance product
+            </li>
           </ul>
           <div className="flex flex-wrap gap-1 mt-4">
             <PythonCard />
@@ -44,26 +59,20 @@ export default function Experience() {
         >
           <ul>
             <li>
-              Engineered features in Java capable of <b>efficiently handling billions</b> of data
-              points
-            </li>
-            <li>
-              Developed components with TypeScript and <b>Redux</b> used by <b>Fortune 500</b>{" "}
-              companies
-            </li>
-            <li>
-              Optimized <b>GitHub Actions CI </b>end-to-end tests to shorten runtime by over
-              <b> 75%</b> by modifying tests to be capable of running concurrently
-            </li>
-            <li>
-              Developed{" "}
+              Developed Python package for <b>rapidly calculating JSON tree diffs</b>, with over{" "}
+              <b>4.7k downloads</b> per month on{" "}
               <a href="https://pypi.org/project/pyjsonpatch/" className="text-sky-400 underline">
-                PyPI Python package
-              </a>{" "}
-              for <b>rapidly calculating JSON tree diffs</b>, following{" "}
-              <a href="https://tools.ietf.org/html/rfc6902" className="text-sky-400 underline">
-                RFC 6902
+                PyPI
               </a>
+            </li>
+            <li>
+              Re-engineered CI/CD pipeline to <b>parallelize end-to-end tests</b>, <b>reducing</b>{" "}
+              runtime by over <b>75%</b>
+            </li>
+            <li>
+              Built <b>gRPC</b> API endpoints, algorithms, and components capable of{" "}
+              <b>efficiently handling billions of data points</b>, used by <b>Fortune 500</b>{" "}
+              companies
             </li>
           </ul>
           <div className="flex flex-wrap gap-1 mt-4">
@@ -87,12 +96,11 @@ export default function Experience() {
         >
           <ul>
             <li>
-              Re-architected messaging platform to reduce response times by over <b>93%</b>, using
-              <b> websockets</b>
+              Re-architected messaging platform using <b> websockets</b>, <b>reducing latency</b> by
+              over <b>93%</b>,
             </li>
             <li>
-              Developed <b>responsive</b> forms and pages with <b>REST</b> APIs with <b>Redis</b>{" "}
-              and <b>PostgreSQL</b>
+              Developed <b>responsive</b> forms and pages with <b>Redis</b> and <b>PostgreSQL</b>
             </li>
             <li>
               Migrated web and mobile repositories into a single monorepo, allowing for easier code
