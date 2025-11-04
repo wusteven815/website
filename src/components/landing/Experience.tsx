@@ -5,7 +5,6 @@ import {
   GitHubActionsCard,
   JavaCard,
   NextJsCard,
-  PlaywrightCard,
   PostgreSQLCard,
   PythonCard,
   ReactCard,
@@ -88,7 +87,6 @@ export default function Experience() {
             <TypeScriptCard />
             <ReactCard />
             <ReduxCard />
-            <PlaywrightCard />
             <JavaCard />
             <GitHubActionsCard />
           </div>

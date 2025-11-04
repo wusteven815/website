@@ -10,7 +10,6 @@ import {
   SiNextdotjs,
   SiOpenai,
   SiOpencv,
-  SiPlaywright,
   SiPostgresql,
   SiPython,
   SiReact,
@@ -86,14 +85,6 @@ export const OpenAICard = () => (
 
 export const OpenCvCard = () => (
   <Chip name="OpenCV" icon={<SiOpencv className="w-3 h-3" />} className="bg-[#5C3EE8] text-white" />
-);
-
-export const PlaywrightCard = () => (
-  <Chip
-    name="Playwright"
-    icon={<SiPlaywright className="w-3 h-3" />}
-    className="text-[#45BA4B] bg-black"
-  />
 );
 
 export const PostgreSQLCard = () => (
